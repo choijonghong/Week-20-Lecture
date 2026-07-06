@@ -1,25 +1,39 @@
 # Week-20-Lecture
-Week-20-Lecture
+# **인공지능의 첫 번째 거울, 엘리자와 인간의 마음**
 
+최근 우리는 ChatGPT와 같은 인공지능과 대화하며 놀라움을 경험하곤 합니다. 때로는 나를 정말 잘 이해해 주는 친구나 상담사처럼 느껴지기도 하죠. "어? 이 녀석 내 마음을 좀 아는데?"라고 생각했던 순간, 혹시 있으신가요?
 
-### 꼼꼼한 딥러닝 논문 리뷰와 코드 실습: Deep Learning Paper Review and Practice
+그런데 인류가 이런 기묘한 경험을 한 것은 어제오늘의 일이 아닙니다. 사실, 지금으로부터 약 60년 전인 1966년에도 사람들은 똑같은 경험을 했습니다. 인공지능의 조상이라 불리는 챗봇 '엘리자(ELIZA)'를 통해서 말이죠.
 
-* 꼼꼼한 딥러닝 논문 리뷰와 코드 실습을 위한 저장소입니다.
-* 최신 논문 위주로, 많은 인기를 끌고 있는 다양한 딥러닝 논문을 소개합니다.
-* 질문 사항은 본 저장소의 <b>[이슈(Issues)](https://github.com/ndb796/Deep-Learning-Paper-Review-and-Practice/issues)</b> 탭에 남겨주세요.
+### **1\. 1966년의 심리치료사, 엘리자(ELIZA)**
 
-#### Image Recognition (이미지 인식)
+엘리자는 MIT의 조셉 와이젠바움 교수가 개발한 세계 최초의 심리치료사 챗봇입니다. 당시 사람들은 터미널 앞에 앉아 엘리자와 대화를 나누며 위로를 받았고, 심지어는 기계에게 자신의 깊은 고민을 털어놓기도 했습니다.
 
-* End-to-End Object Detection with Transformers (ECCV 2020)
-    * [Original Paper Link](https://arxiv.org/abs/2005.12872) / [Paper Review Video](https://www.youtube.com/watch?v=hCWUTvVrG7E) / [Summary PDF](/lecture_notes/DETR.pdf) / Code Practice
-* Searching for MobileNetV3 (ICCV 2019)
-    * [Original Paper Link](https://arxiv.org/abs/1905.02244) / Paper Review Video / Summary PDF / Code Practice
-* Deep Residual Learning for Image Recognition (CVPR 2016)
-    * [Original Paper Link](https://arxiv.org/abs/1512.03385) / [Paper Review Video](https://www.youtube.com/watch?v=671BsKl8d0E) / [Summary PDF](/lecture_notes/ResNet.pdf) / [MNIST](/code_practices/ResNet18_MNIST_Train.ipynb) / [CIFAR-10](/code_practices/ResNet18_CIFAR10_Train.ipynb) / [ImageNet](/code_practices/Pretrained_ResNet18_ImageNet_Test.ipynb)
-* Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization (ICCV 2017)
-    * [Original Paper Link](https://arxiv.org/abs/1703.06868) / [Paper Review Video](https://www.youtube.com/watch?v=OM-6zYYRYfg) / [Summary PDF](/lecture_notes/AdaIN_Style_Transfer.pdf) / [Code Practice](/code_practices/AdaIN_Style_Transfer_Tutorial.ipynb)
-* Image Style Transfer Using Convolutional Neural Networks (CVPR 2016)
-    * [Original Paper Link](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) / [Paper Review Video](https://www.youtube.com/watch?v=va3e2c4uKJk) / [Summary PDF](/lecture_notes/Style%20Transfer.pdf) / [Code Practice](/code_practices/Style_Transfer_Tutorial.ipynb)
-* Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks (NIPS 2015)
-    * [Original Paper Link](https://arxiv.org/abs/1506.01497) / Paper Review Video / [Summary PDF](/lecture_notes/Faster_R-CNN.pdf) / Code Practice
+하지만 기술적으로 보면 엘리자는 전혀 '지능적'이지 않았습니다. 지금 우리가 사용하는 복잡한 신경망 모델이 아니라, 단순한 **패턴 매칭(Pattern Matching)** 기술의 산물이었기 때문입니다.
 
+### **2\. 엘리자의 마법: "말을 되돌려주기"**
+
+엘리자가 대화하는 방식은 매우 단순했습니다. 대화의 맥락을 이해하는 것이 아니라, 사용자가 입력한 문장에서 특정 키워드(예: '엄마', '스트레스', '학교')를 찾아 미리 준비된 답변 공식에 대입하는 방식이었죠.
+
+예를 들어, 사용자가 "학교 업무 때문에 스트레스받아요"라고 입력하면, 엘리자는 '학교'와 '스트레스'라는 키워드를 포착해 "학교 업무에 대해 더 말씀해 주시겠어요?"라고 되묻는 식입니다. 상담을 하는 것이 아니라, 상담처럼 보이도록 대화의 형식을 빌려온 '마술'에 가까웠던 셈입니다.
+
+### **3\. 왜 우리는 기계에게 위로받을까?: '엘리자 효과'**
+
+놀라운 점은, 엘리자가 단순한 패턴의 반복이라는 것을 알면서도 사람들은 여전히 그 기계에게 마음을 열었다는 사실입니다. 심리학자들은 이를 '엘리자 효과(ELIZA Effect)'라고 부릅니다.
+
+엘리자 효과란, 인간이 기계의 단순한 반응에 의미를 부여하고, 스스로 "기계가 나를 이해하고 공감하고 있다"고 해석해 버리는 심리 현상을 말합니다.
+
+왜 이런 일이 벌어질까요?
+
+* **의인화 본능:** 인간은 본능적으로 무생물에도 인격을 부여하고 싶어 합니다.  
+* **연결의 욕구:** 누군가 내 말을 들어주길 바라는 결핍과 외로움이, 기계의 반응조차 '공감'으로 읽게 만드는 것입니다.
+
+결국 엘리자는 기계가 똑똑해서가 아니라, 우리가 누군가에게 이해받고 싶어 하는 마음이 컸기 때문에 성공할 수 있었습니다.
+
+### **4\. 현대의 AI와 우리의 자세**
+
+오늘날의 ChatGPT는 엘리자보다 비교할 수 없을 정도로 정교합니다. 하지만 그 본질은 여전히 '통계적 확률'로 다음 단어를 예측하는 기계일 뿐입니다. 그럼에도 불구하고, 우리는 지금도 '엘리자 효과'라는 거대한 거울 앞에 서 있습니다.
+
+AI는 우리가 던지는 질문에 따라 우리의 욕구와 결핍을 비추어 줍니다. 우리가 AI를 사용할 때 기술이 우리를 이해한다고 착각하기보다는, AI가 무엇인지 정확히 인지하는 '디지털 리터러시'를 갖추는 것이 중요합니다.
+
+기계는 정보를 처리할 뿐이지만, 의미를 부여하고 위로를 찾는 것은 결국 우리 인간의 몫이기 때문입니다. 여러분은 기계인 것을 알면서도, AI에게 여러분의 진심을 이야기하게 될까요?
